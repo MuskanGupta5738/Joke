@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+    <a href="#home" class="box">Home</a>
+    <a href="#about" class="box">About</a>
+    <a href="#contact" class="box">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+        <img src="https://picsum.photos/150" alt="profile" loading="lazy">
+        <h1>Hello, I'm Muskan 👋</h1>
+        <p>Web Developer</p>
+    </section>
+
+     <!-- about section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am learning web development and building projects.</p>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: muskan@example.com</p>
+    </section>
+
+    <!-- button section -->
+    <section>
+        <p id="demo">Click the button</p>
+        <button onclick="changeText()">Click Me</button>
+    </section>
+
+    <!-- contact form section -->
+<section>
+        <h2>Contact Form</h2>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+            <input type="email" id="email" placeholder="Enter Email"><br><br>
+
+            <textarea id="message" placeholder="Message"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- to-do list section -->
+
+<section>
+        <h2>To-Do List</h2>
+
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+<!-- API Section -->
+<section>
+        <h2>Random Joke 😂</h2>
+
+        <button onclick="getJoke()">Get Joke</button>
+
+        <p id="joke"></p>
+    </section>
+
+    <!-- products section -->
+<section>
+        <h2>Products</h2>
+
+        <select onchange="filterProducts(this.value)">
+            <option value="all">All</option>
+            <option value="low">Price < 500</option>
+            <option value="high">Price > 500</option>
+        </select>
+
+        <ul id="productList"></ul>
+    </section>
+
+    <!-- script section -->
+<script src="script.js"></script>
+</body>
+</html>

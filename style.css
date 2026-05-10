@@ -1,0 +1,134 @@
+body 
+{
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 
+{
+    color: darkblue;
+    margin-top: 20px;
+}
+
+h2
+{
+    color: green;
+    margin-top: 20px;
+}
+
+img 
+{
+    border-radius: 10px;
+}
+
+a 
+{
+    color: rgb(255, 0, 17);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;   
+    gap: 40px;                 
+    background: white;
+    padding: 10px;
+}
+
+.box {
+    padding: 10px 20px;
+    background: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) 
+{
+    .container 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+form {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    padding: 10px 20px;
+    background: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(0, 0, 128);
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* 💻 Tablet */
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: lightblue;
+}
+
+.hero img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button:hover {
+    background: navy;
+    transform: scale(1.05);
+}
